@@ -46,13 +46,54 @@
 let countEL = document.getElementById("count1")
 console.log(countEL)
 let count = 0
+let previousentries = document.getElementById('previous')
 function increement() {
     console.log('Clicked')
     count++
     countEL.innerText = count
-    console.log(countEL)
 }
-function reset() {
+function save() {
     countEL.innerText = 0
+    previousentries.textContent += count + " - "
     count = 0
 }
+
+//Inner text Alternative is Node.textContent
+
+//Inner text wont return the hidden elements like space
+//But textContent return the all elements
+
+
+
+
+
+/*****************Strings Started */
+// let username='person'
+// let message="Hello there"//+ concatation
+// let messagetouser=username+message
+// console.log(messagetouser)
+
+// let name1 = "vansh"
+// let greeting = "Hi ! My name is"
+// let combine = greeting + " " + name1 + " "
+// console.log(combine)
+
+
+//One number and String
+// let name = 4
+// let greeting = "10"
+
+// let total = name + greeting//Concatation
+// //String wins in case of Number vs String
+// console.log(total)
+
+
+
+
+
+
+
+
+
+
+
